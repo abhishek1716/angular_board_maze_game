@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { MatDialogConfig, MatDialog } from '@angular/material';
+import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { DialogBoxComponent } from '../shared/dialog-box/dialog-box.component';
 
 export enum KEY_CODE {

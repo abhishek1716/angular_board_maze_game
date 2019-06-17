@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { GameRoutingModule } from './game-routing.module';
 import { GameComponent } from './game.component';
-import { GameService } from './game.service';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -13,6 +12,6 @@ import { SharedModule } from '../shared/shared.module';
     GameRoutingModule,
     SharedModule
   ],
-  providers: [GameService]
+  providers: []
 })
 export class GameModule { }
