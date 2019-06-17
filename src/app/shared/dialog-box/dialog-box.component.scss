@@ -1,0 +1,12 @@
+span.has_error {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  color: red;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+mat-form-field {
+  width: 100%;
+}

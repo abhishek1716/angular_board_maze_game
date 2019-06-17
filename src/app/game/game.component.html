@@ -1,0 +1,12 @@
+<div class="btn" *ngIf="!showBoard">
+  <button mat-stroked-button color="accent" (click)="openDialog()">Please enter the board width and height of Maze Problem</button>
+</div>
+  <canvas #canvas width="400px" height="400px"></canvas>
+
+<div class="boardGame" *ngIf="showBoard" >
+
+<div class="btn" >
+  <button mat-stroked-button color="accent" (click)="hideBoard()">Choose different Board size.</button>
+</div>
+
+</div>

@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Enter the Board Width and Height</h2>
+
+<mat-dialog-content [formGroup]="form">
+  
+  <mat-form-field>
+      <input matInput
+              placeholder="Width"
+              name="width"
+              type="number"
+             formControlName="width">
+             <span class="has_error" *ngIf="formErrors.width">{{formErrors.width}}</span>
+
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput
+            placeholder="Height"
+            name="height"
+            type="number"
+           formControlName="height">
+           <span class="has_error" *ngIf="formErrors.height">{{formErrors.height}}</span>
+
+</mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button"(click)="close()">Close</button>
+  <button class="mat-raised-button mat-primary"(click)="save()">Save</button>
+</mat-dialog-actions>
