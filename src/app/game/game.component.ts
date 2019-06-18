@@ -62,9 +62,12 @@ export class GameComponent implements OnInit, AfterViewInit {
       
      
       for(let k=0; k<this.enemyCord.length; k++){
+        
         if(this.enemyCord[k].x == this.xCord && this.enemyCord[k].y == this.yCord){
           if(k>-1){
+            console.log(k)
               this.enemyCord.splice(k, 1);
+              k--
           }
         }
       }
